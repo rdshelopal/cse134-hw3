@@ -1,0 +1,89 @@
+:root {
+    --backgroundcolor: rgb(175, 175, 175);
+    
+  }
+
+* {
+    background-color:var(--backgroundcolor);
+    font-family: "Roboto", sans-serif;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+    .homebutton{
+        scale: 0.1;
+        background-color:#592941;
+    }
+    
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin: 0 auto;
+        button{
+            padding: 1.5rem;
+            color: white;
+        }
+    }
+    
+    .profilepicture{
+        height: 10rem;
+        display: flex;
+    }
+
+    .headerclass{
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .mainclass{
+        width: 75%;
+        margin: 0 auto;
+        height: 80dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    section{
+        border: 1px solid black;
+        h3{
+            width: 97%;
+            margin: auto;
+        }
+       
+
+    }
+    .aboutmeclass{
+        display: flex;
+        p{
+            width: 81%;
+        }
+        height: 50vh;
+    }
+
+    .profilepicture{
+        scale: 1.2;
+    }
+
+   body{
+    min-width: 50vh;
+    height: fit-content;
+   }
+
+}
+

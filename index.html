@@ -4,45 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
     <title>Personal Portfolio</title>
 </head>
 <body>
-    <header>
+    <header class="headerclass">
+        
+        <nav class="navigation">
+            
+            <button><a href="index.html"> Home</a></button>
+            <button><a href="#experience">Projects & Experience</a></button>
+            <button><a href="#contact">Contact</a></button>
+            
+        </nav>
+
+
         <h1>Ryandeep Shelopal</h1>
         <h2>Computer Engineering Student</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="experienceandprojects.html">Projects & Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+
     </header>
     
-    <main>
+    <main class="mainclass">
         <section>
             <h3>About Me</h3>
-            <p>Welcome to my portfolio. I enjoy coding, problem-solving, and building things.</p>
-            <figure>
-                <img src="#" alt="Placeholder image">
-                <figcaption>Placeholder image for profile</figcaption>
-            </figure>
+            <div class="aboutmeclass">
+                <figure>
+                    <img src="mee.jpg" alt="Placeholder image" class="profilepicture">
+                </figure>
+                <p>Welcome to my portfolio. I enjoy coding, problem-solving, and building things.</p>
+             </div>
         </section>
+
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li>Developer Journal - <a href="https://github.com/cse110-sp24-group33/cse110-sp24-group33/tree/main">GitHub</a></li>
+            </ul>
+        </section>
+        
+        <section id="experience">
+            <h2>Experience</h2>
+            <table>
+                <caption>Work Experience</caption>
+                <tr>
+                    <th>Company</th>
+                    <th>Role</th>
+                    <th>Years</th>
+                </tr>
+                <tr>
+                    <td>Underwriter's Laboratories</td>
+                    <td>Wireless Product Testing Inter</td>
+                    <td>2019</td>
+                </tr>
+            </table>
+        </section>
+        
         
         <section id="contact">
             <h3>Contact Info</h3>
             <address>
-                Email: <a href="mailto:someone@example.com">someone@example.com</a><br>
-                GitHub: <a href="#">GitHub Link</a><br>
-                LinkedIn: <a href="#">LinkedIn Profile</a>
+                Email: <a href="mailto:someone@example.com">rdshelopal@gmail.com</a><br>
+                GitHub: <a href="https://github.com/rdshelopal">GitHub</a><br>
+                LinkedIn: <a href="https://www.linkedin.com/in/ryan-shelopal/">LinkedIn</a>
             </address>
         </section>
         
-        <hr>
         <footer>
             <form onsubmit="alert('Thank You for Submitting!')">
-                <input type="text" placeholder="Enter email for updates!">
+                <input type="text" placeholder="Message Me!">
                 <button>Submit</button>
                 <hr>
             <p>&copy; 2025 Ryandeep Shelopal</p>
